@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This website provides a series of presentational sections teaching you Java
   one step at a time.
 baseurl: "/LearningJava" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://itzg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: itzg
 github_username:  itzg
 
