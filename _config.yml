@@ -16,8 +16,7 @@
 title: Learning Java
 email: itzgeoff@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This website provides a series of presentational sections teaching you Java
-  one step at a time.
+  This website provides an introduction to Java for brand new developers.
 baseurl: "/LearningJava" # the subpath of your site, e.g. /blog
 url: "https://itzg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: itzg

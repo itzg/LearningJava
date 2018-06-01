@@ -2,9 +2,7 @@
 layout: page
 ---
 
-# Learning Java
 
-This website provides an introduction to Java for brand new developers.
 
 ## Sections
 
