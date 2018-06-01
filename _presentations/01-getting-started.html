@@ -116,10 +116,10 @@ Java comes with some basic (or "primitive") data types. Here's a few of the
 most handy and common ones:
 
 ### int
-A positive or negative whole number, or **int** eger, like 0, 1, 45, -4, ...
+A positive or negative whole number, or **int**-eger, like 0, 1, 42, -4, ...
 
 ### float
-A **float** ing-point number that has a decimal point, like 3.14
+A **float**-ing-point number that has a decimal point, like 3.14, 0.7, -987.2
 
 ### boolean
 A value that indicates truthi-ness, either **`true`** or **`false`**
@@ -181,11 +181,64 @@ class Animal {
 }
 ```
 
-So, as you can see an alternative style of field declaration is:
+So, as you can see, the extended field declaration syntax is:
 .panel[type name = value;]
 
 Actually, the field automatically had a default value of zero before. Every
 type in Java comes with its own default:
 * numbers are zero
 * booleans are `false`
-* and objects are `null`. _I'll explain objects and null later._  
+* and objects are `null`. _I'll explain objects and null later._
+
+---
+# More class fields
+
+Let's give our animal some more fields, each with a different type:
+
+```java
+class Animal {
+  int eyes = 2;
+  float age; // the default of zero works
+  boolean breathsAir = true;
+}
+```
+
+---
+# An object is an instance of a class
+
+Like a recipe, a class on its own doesn't really do anything.
+
+To create a new object from a class, we use the **`new`** operator:
+
+.panel[new ClassToCreate();]
+
+Such as:
+```java
+new Animal();
+```
+
+That statement creates a brand new object **of type** `Animal` with all of
+its fields set to the default values we declared:
+* Two eyes
+* An age of zero
+* And it breaths air
+
+---
+# Variables
+
+In the last slide, we created an animal, but we didn't capture it.
+
+```java
+new Animal(); // but it got away
+```
+
+To actually keep the object and do something with it, we need to save it
+in a **variable**.
+
+Variables are declared a lot like fields:
+.panel[type name = initialValue;]
+
+So, to capture an `Animal` object we can use:
+```java
+Animal mysteryAnimal = new Animal();
+```
