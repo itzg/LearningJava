@@ -3,7 +3,21 @@ title: Getting Started
 ---
 
 
-# Learning Java
+# Welcome to Java
+
+You're about to learn the programming language Java.
+
+Java is a fun and rewarding language to learn.
+
+Many things are implemented in Java, like...
+* Minecraft
+* Web servers
+* Mobile apps
+* any many more
+
+Once you master Java you'll find it becomes easier to learn even more languages.
+
+_Press space, the right arrow, or swipe on your mobile device to continue._
 
 ---
 # Comments
@@ -37,7 +51,7 @@ All blocks of code in Java are delimited by curly braces
 ## { ...code goes here... }
 
 _On your keyboard, the curly braces are located in the upper right, above the
-square brackets._
+square brackets. Hold down the "Shift" key when pressing the square bracket key._
 
 ---
 
@@ -70,3 +84,108 @@ YourClass
 .panel[
 YOURclass
 ]
+
+---
+# Camel case
+
+A common practice (also called a "convention") in Java is to use
+what's called "camel case" to join the words that make up the names of things.
+
+_By the way, in Java, "identifiers" means the "name of a thing"._
+
+.panel[ThisSentenceCanBeTheNameOfAClass]
+
+It's called camel case because the uppercase letters starting each word
+make the sentence look like it has humps like a camel.
+
+For now, there's one more rule with Java identifiers:
+* Names of **classes** start with an **uppercase** letter
+* Other identifiers, like **fields, methods, and variables** start with a **lowercase** letter
+
+.panel[andThisWouldBeSomethingElse]
+
+---
+# What are fields, methods, and variables
+
+Stay tuned...we'll talk about them in just a minute.
+
+---
+# Primitive types
+
+Java comes with some basic (or "primitive") data types. Here's a few of the
+most handy and common ones:
+
+### int
+A positive or negative whole number, or **int** eger, like 0, 1, 45, -4, ...
+
+### float
+A **float** ing-point number that has a decimal point, like 3.14
+
+### boolean
+A value that indicates truthi-ness, either **`true`** or **`false`**
+
+---
+# Fields
+
+Let's get back to classes. **Java classes are like recipes** to define instances of things.
+
+Part of the class' recipe is declaring what pieces of data it can hold,
+which are called **fields**
+
+A field looks like
+.panel[type name;]
+
+For example:
+```java
+class Animal {
+*  int eyes;
+}
+```
+
+The way read to the class declaration (or its recipe) above is
+
+.panel[An `Animal` **has** a field named `eyes` that **is** an `int`"]
+
+---
+# Semicolons  ;
+
+The field `eyes`, declared below must end with a semicolon (;).
+
+Semicolons are our way to tell the compiler where the end is. _It's like a period at the end of a sentence...but
+period gets used for something else in Java._
+
+```java
+class Animal {
+*  int eyes;
+}
+```
+
+Make sure you're using a semicolon and **not colon (:)**. Colons have other
+uses in Java that we'll see later.
+
+On your keyboard, the semicolon is on the right, just next to the comma. In
+fact, you can remember a semicolon because it has a comma on the bottom part
+and it's "partly like" a colon.
+
+---
+# Default values
+
+Back to fields, a field declaration can be given a default value.
+
+We can probably assume most animals have two eyes, so let's declare a **default**
+to avoid having to type and set that value for every animal we create:
+
+```java
+class Animal {
+  int eyes = 2;
+}
+```
+
+So, as you can see an alternative style of field declaration is:
+.panel[type name = value;]
+
+Actually, the field automatically had a default value of zero before. Every
+type in Java comes with its own default:
+* numbers are zero
+* booleans are `false`
+* and objects are `null`. _I'll explain objects and null later._  
