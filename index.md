@@ -2,8 +2,6 @@
 layout: page
 ---
 
-
-
 ## Sections
 
 {% for item in site.presentations %}
