@@ -25,7 +25,7 @@ github_username:  itzg
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: minima
 
 collections:
   presentations:
