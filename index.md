@@ -1,7 +1,9 @@
 ---
 layout: home
-title: Home
 ---
+
+Welcome. Below you will find an evolving list of sections that will teach
+you Java from the very beginning.
 
 ## Sections
 
